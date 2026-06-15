@@ -1,0 +1,6 @@
+{
+  "name": "EWMS Production Enterprise",
+  "description": "سامانه یکپارچه مدیریت فرآیندهای مهندسی کارگاهی شرکت عمران آذرستان - پروژه نیروگاه برق",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

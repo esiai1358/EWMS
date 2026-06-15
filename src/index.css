@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;405;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "react-grid-layout/css/styles.css";
+
+@variant dark (.dark &);
+
+@theme {
+  --variant-dark: .dark;
+  --font-sans: "Vazirmatn", "IRANSans", "Tahoma", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-slate-950: #090d16;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    direction: rtl;
+    text-align: right;
+    font-family: "Vazirmatn", "IRANSans", "Tahoma", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar to match Microsoft Dynamics/SAP Fiori aesthetics */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* Custom styles for professional widgets */
+.custom-grid-bg {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1px, transparent 1px);
+}
+.dark .custom-grid-bg {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
+}
