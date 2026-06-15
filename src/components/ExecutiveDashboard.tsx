@@ -9,6 +9,7 @@ import {
   mockDailyReports 
 } from '../data/mockData';
 import BpmVisualizer from './BpmVisualizer';
+import SummaryKpi from './SummaryKpi';
 import { 
   Grid, Lock, Unlock, RotateCcw, Save, Plus, Trash2, Settings, 
   Activity, CheckSquare, Layers, Eye, Download, AlertTriangle, 
@@ -194,6 +195,9 @@ export default function ExecutiveDashboard({ currentUser }: ExecutiveDashboardPr
           <span>{showNotification}</span>
         </div>
       )}
+
+      {/* Summary KPI Panel */}
+      <SummaryKpi onTriggerNotification={triggerNotification} />
 
       {/* Controller Controls Toolbar */}
       <div className="flex flex-col md:flex-row justify-between items-stretch md:items-center p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl gap-4 shadow-sm">
